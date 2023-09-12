@@ -19,12 +19,14 @@
                     <input type="text" class="form-control" name="no_telp_petugas" placeholder="Input No Telepon Petugas">
                     <label for="exampleInputEmail1">Alamat Petugas</label>
                     <input type="text" class="form-control" name="penerbit_buku" placeholder="Input Penerbit Buku">
-                  </div>
+</div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
                   <button type="submit" name="submit" value="Save" class="btn btn-primary">Submit</button>
+                  <button type="submit" name="submit" value="Save" class="btn btn-primary">Reset</button>
                 </div>
               </form>
             </div>
+</div>
 @endsection
