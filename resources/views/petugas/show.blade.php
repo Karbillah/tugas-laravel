@@ -38,7 +38,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                <a href="" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Kembali</a>
+                <a href="" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Kembali</a>
                 </div>
               </form>
             </div>

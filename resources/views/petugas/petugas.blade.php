@@ -21,19 +21,34 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputNama1">Nama</label>
-                    <input type="text" class="form-control" name="nama" placeholder="Enter Nama">
+                    <input type="text" class="form-control @error('nama') is-invalid @enderror " name="nama" placeholder="Enter Nama">
+                    @error('nama')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                   </div>
+
                   <div class="form-group">
                     <label for="exampleInputJabatan1">Jabatan</label>
-                    <input type="text" class="form-control" name="jabatan" placeholder="Enter Jabatan">
+                    <input type="text"class="form-control @error('jabatan') is-invalid @enderror " name="jabatan" placeholder="Enter Jabatan">
+                    @error('jabatan')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                   </div>
+
                   <div class="form-group">
                     <label for="exampleInputNoTelepon1">No Telepon</label>
-                    <input type="number" class="form-control" name="telp" placeholder="Enter No Telepon">
+                    <input type="number" class="form-control @error('telp') is-invalid @enderror "name="telp" placeholder="Enter No Telepon">
+                    @error('telp')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                   </div>
+
                   <div class="form-group">
                     <label for="exampleInputAlamat1">Alamat</label>
-                    <input type="text" class="form-control" name="alamat" placeholder="Enter Alamat">
+                    <input type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" placeholder="Enter Alamat">
+                    @error('alamat')
+                          <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                   </div>
                 <!-- /.card-body -->
 
