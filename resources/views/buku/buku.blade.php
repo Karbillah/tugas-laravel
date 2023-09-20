@@ -5,14 +5,14 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css')}}">
 
-<div class="card card-primary">
+<div class="card card-warning">
               <div class="card-header">
                 <h3 class="card-title">Form Input Data Buku</h3>
               </div>
 
               <form>
               <div class="card-body">
-              <div class="card card-primary">
+              <div class="card card-warning">
               <div class="card-header">
                 <h3 class="card-title">Quick Example</h3>
               </div>
@@ -46,10 +46,29 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-warning">Submit</button>
+                  <button type="reset" class="btn btn-warning">Reset</button>
+                  <a href="" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Kembali</a>
                 </div>
               </form>
             </div>
+            </div>
+
+             <div class="modal" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Peringatan!!</h5>
+                  </div>
+                  <div class="modal-body">
+                    <p>Apakah Anda Yakin Akan Keluar Dari Form Create Data Buku?</p>
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                    <a href="{{ route('anggota.index') }}" class="btn btn-primary">Yes</a>
+                  </div>
+                </div>
+              </div>
 
 <!-- jQuery -->
 <script src="{{ asset('adminlte/plugins/jquery/jquery.min.js')}}"></script>

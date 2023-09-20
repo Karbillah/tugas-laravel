@@ -37,7 +37,6 @@
                   </div>
                 <!-- /.card-body -->
 
-                
                 <div class="card-footer">
                   <button type="submit" class="btn btn-warning">Submit</button>
                   <button type="reset" class="btn btn-warning">Reset</button>
